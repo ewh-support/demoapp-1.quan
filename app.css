@@ -31337,7 +31337,7 @@ img {
     position: relative;
 }
 .tag-group-list .icon-radio {
-	left: 15px;
+	left: 0px;
 }
 .tag-group-list .item-title {
 	white-space: normal !important;
@@ -31519,7 +31519,18 @@ input, select{
     padding: 0px;
     margin: 5px;
 }
-
+.ios label.item-radio input[type="radio"] ~ .icon-radio{
+    border: 1px solid;
+}
+.ios .block{
+    margin-top: 0px;
+}
+.ios .navbar~.page-content, .ios .navbar~:not(.no-navbar) .page-content {
+    padding-top: 56px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 .mg-b-25{
     margin-bottom: 25px;
 }
@@ -31532,6 +31543,12 @@ input, select{
     -ms-flex-align: center!important;
     align-items: center!important;
 }
+.md label.item-radio > .icon-radio {
+    margin-right: 15px;
+}
+.ios .tag-group-list .item-inner {
+    margin-left: 35px;
+}
 .style-mt{
     font-size: 17px;
     font-weight: bold;
@@ -31543,8 +31560,33 @@ input, select{
 .mg-t-0{
     margin-top: 0px !important;
 }
-
-.btn-active{
-      background-color: #e91e63 !important;
+.mg-0-auto{
+    margin: 0 auto;
 }
-
+.btn-dangxem{
+    background-color: #2196f3 !important;
+}
+.btn-daxem{
+    /* background-color: #ffc107 !important; */
+    background-color: #e91e63 !important;
+}
+.btn-chuaxem{
+    background-color:#1ccacd !important
+}
+.btn-chon{
+    background-color: #28a745 !important;
+}
+.btn-dachon-dangxem{
+    background-color: #2196f3 !important;
+}
+@media (max-width: 480px) {
+	.link-here {
+        width: 100%;
+    }
+}
+.btn-hide{
+    display: none;
+}
+.btn-show{
+    display: block;
+}
